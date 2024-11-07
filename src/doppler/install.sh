@@ -18,6 +18,10 @@ echo 'https://packages.doppler.com/public/cli/alpine/any-version/main' | tee -a 
 # Install Doppler CLI
 apk add doppler
 
+mkdir -p /usr/local/share/doppler
+cp ${PWD}/scripts/setup-doppler.sh /usr/local/share/doppler/setup-doppler.sh
+chmod +x /usr/local/share/doppler/setup-doppler.sh
+
 # Install completions
 if [ "$COMPLETION" = "true" ]; then
     apk add bash-completion
