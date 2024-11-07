@@ -1,0 +1,10 @@
+{
+    "doppler": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "doppler": {
+                "completion": "true"
+            }
+        }
+    }
+}

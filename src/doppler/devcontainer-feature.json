@@ -1,0 +1,17 @@
+{
+    "name": "Doppler Alpine",
+    "id": "doppler",
+    "version": "1.0.0",
+    "description": "Install doppler on alpine installs",
+    "options": {
+        "completion": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether or not to install doppler shell completion after installing"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "postCreateCommand": "/usr/local/share/doppler/setup-doppler.sh"
+}

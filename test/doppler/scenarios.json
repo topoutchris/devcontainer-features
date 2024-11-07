@@ -1,0 +1,11 @@
+{
+    "doppler_completion": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:1": {},
+            "doppler": {
+                "completion": true
+            }
+        }
+    }
+}
